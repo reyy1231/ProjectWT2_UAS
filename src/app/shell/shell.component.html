@@ -1,0 +1,17 @@
+<RadSideDrawer tkExampleTitle tkToggleNavButton>
+  <GridLayout tkDrawerContent rows="56 *" class="sideStackLayout">
+    <ScrollView row="1">
+      <StackLayout class="sideStackLayout">
+        <Label text="Pokemon API" class="h5 Stat-nav p-l-20" style="color: white; "
+        (tap)="onTap('pokemon')"></Label>
+        <Label text="Digimon API" class="h5 Stat-nav p-l-20" style="color: white; "
+        (tap)="onTap('digimon')"></Label>
+        <Label text="About" class="h5 Stat-nav p-l-20" style="color: white; "
+        (tap)="onTap('About')"></Label>
+      </StackLayout>
+    </ScrollView>
+  </GridLayout>
+  <StackLayout tkMainContent>
+    <page-router-outlet></page-router-outlet>
+  </StackLayout>
+</RadSideDrawer>
